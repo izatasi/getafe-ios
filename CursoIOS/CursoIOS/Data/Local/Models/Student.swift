@@ -15,7 +15,7 @@ class Student: CustomStringConvertible {
     var birthdate: Date?
     
     var description: String {
-        return "\(String(describing: name)) \(String(describing: email))"
+        return "Student data \(String(describing: name)) \(String(describing: email))"
     }
     
     convenience init(name: String, email: String = "default@email.com", birthdate: Date? = Date()) {

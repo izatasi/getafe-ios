@@ -13,6 +13,8 @@
 		D99790142333FF8A00113437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99790132333FF8A00113437 /* Assets.xcassets */; };
 		D99790172333FF8A00113437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99790152333FF8A00113437 /* LaunchScreen.storyboard */; };
 		D9A49DA2233540540028C2C1 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A49DA02335363D0028C2C1 /* Student.swift */; };
+		D9A49DA42335471B0028C2C1 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A49DA32335471B0028C2C1 /* Teacher.swift */; };
+		D9A49DA623354AB70028C2C1 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A49DA523354AB70028C2C1 /* Subject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D99790162333FF8A00113437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99790182333FF8A00113437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A49DA02335363D0028C2C1 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		D9A49DA32335471B0028C2C1 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		D9A49DA523354AB70028C2C1 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				D9A49DA02335363D0028C2C1 /* Student.swift */,
+				D9A49DA32335471B0028C2C1 /* Teacher.swift */,
+				D9A49DA523354AB70028C2C1 /* Subject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A49DA42335471B0028C2C1 /* Teacher.swift in Sources */,
+				D9A49DA623354AB70028C2C1 /* Subject.swift in Sources */,
 				D997900F2333FF7D00113437 /* ViewController.swift in Sources */,
 				D9A49DA2233540540028C2C1 /* Student.swift in Sources */,
 				D997900D2333FF7D00113437 /* AppDelegate.swift in Sources */,
