@@ -13,6 +13,15 @@ import Foundation
 enum TeacherType: String {
     case intern
     case extern
+    
+    var description: String {
+        switch self {
+        case .intern :
+            return "interno"
+        case .extern:
+            return "externo"
+        }
+    }
 }
 
 class Teacher: Hashable, CustomStringConvertible {
