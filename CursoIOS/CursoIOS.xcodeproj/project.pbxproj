@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D99353B4233A95C200DBD7E6 /* viewControllerEjercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99353B3233A95C200DBD7E6 /* viewControllerEjercicio.swift */; };
+		D99353B6233A965C00DBD7E6 /* StoryboardEjercicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99353B5233A965C00DBD7E6 /* StoryboardEjercicio.storyboard */; };
 		D997900D2333FF7D00113437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997900C2333FF7D00113437 /* AppDelegate.swift */; };
 		D997900F2333FF7D00113437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997900E2333FF7D00113437 /* ViewController.swift */; };
 		D99790122333FF7D00113437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99790102333FF7D00113437 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D99353B3233A95C200DBD7E6 /* viewControllerEjercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewControllerEjercicio.swift; sourceTree = "<group>"; };
+		D99353B5233A965C00DBD7E6 /* StoryboardEjercicio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardEjercicio.storyboard; sourceTree = "<group>"; };
 		D99790092333FF7D00113437 /* CursoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D997900C2333FF7D00113437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D997900E2333FF7D00113437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D997900E2333FF7D00113437 /* ViewController.swift */,
+				D99353B3233A95C200DBD7E6 /* viewControllerEjercicio.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			children = (
 				D99790102333FF7D00113437 /* Main.storyboard */,
 				D99790152333FF8A00113437 /* LaunchScreen.storyboard */,
+				D99353B5233A965C00DBD7E6 /* StoryboardEjercicio.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 				D99790172333FF8A00113437 /* LaunchScreen.storyboard in Resources */,
 				D99790142333FF8A00113437 /* Assets.xcassets in Resources */,
 				D99790122333FF7D00113437 /* Main.storyboard in Resources */,
+				D99353B6233A965C00DBD7E6 /* StoryboardEjercicio.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,7 @@
 				D9A49DA42335471B0028C2C1 /* Teacher.swift in Sources */,
 				D9A49DA623354AB70028C2C1 /* Subject.swift in Sources */,
 				D997900F2333FF7D00113437 /* ViewController.swift in Sources */,
+				D99353B4233A95C200DBD7E6 /* viewControllerEjercicio.swift in Sources */,
 				D9A8890B2339156200C8FD86 /* DefaultData.swift in Sources */,
 				D9A49DA2233540540028C2C1 /* Student.swift in Sources */,
 				D997900D2333FF7D00113437 /* AppDelegate.swift in Sources */,

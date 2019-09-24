@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SiQ-JV-G2p">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Students-->
+        <scene sceneID="GZw-Pg-2QS">
+            <objects>
+                <viewController id="wPG-ny-yEy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JR9-of-sDy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LMw-DL-Ozg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Students" image="ic_tab_students" id="AOk-GE-fep"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cM7-wh-Y55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.0869565217392" y="34.821428571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gYx-dJ-Ee8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SiQ-JV-G2p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cEz-pa-ndR">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wPG-ny-yEy" kind="relationship" relationship="viewControllers" id="hr7-LG-xmc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFQ-HW-Yek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_students" width="30" height="27"/>
+    </resources>
+</document>

@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yBY-P3-sjV">
-                                <rect key="frame" x="20" y="84" width="362.5" height="344"/>
+                                <rect key="frame" x="20" y="84" width="374" height="152"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome to automated services" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-qJ-Hxu">
-                                        <rect key="frame" x="0.0" y="0.0" width="362.5" height="80"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wellcome to automated services" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-qJ-Hxu">
+                                        <rect key="frame" x="6" y="0.0" width="362.5" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="jkS-wr-Rwi"/>
                                         </constraints>
@@ -29,46 +30,121 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="K8b-ZM-gM6">
-                                        <rect key="frame" x="53.5" y="88" width="256" height="256"/>
+                                        <rect key="frame" x="155" y="88" width="64" height="64"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="124" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-3h-9cy">
-                                <rect key="frame" x="20" y="651" width="362.5" height="191"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-3h-9cy">
+                                <rect key="frame" x="20" y="684" width="374" height="158"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP1-w8-EOa">
-                                        <rect key="frame" x="0.0" y="0.0" width="362.5" height="33"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41N-aN-sAJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Pull up/down all courtains in the house">
+                                        <state key="normal" title="Pull up all courtains in the house">
+                                            <color key="titleColor" red="0.25048968199999999" green="0.1145618632" blue="0.9333428144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButton1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWa-53-qUo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP1-w8-EOa">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="33"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Pull down all courtains in the house">
                                             <color key="titleColor" red="0.25048968195915222" green="0.11456186324357986" blue="0.93334281444549561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onButton2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTJ-bZ-Y0j"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp1-tV-31W">
-                                        <rect key="frame" x="0.0" y="157" width="362.5" height="34"/>
-                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="82" width="374" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Turn on/off all lights at your home">
+                                        <state key="normal" title="Turn on all lights at your home">
                                             <color key="titleColor" red="0.15461375208700778" green="0.17923045062682064" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onButton3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABf-46-9Vm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-1F-wgK">
+                                        <rect key="frame" x="0.0" y="124" width="374" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Turn off all lights at your home">
+                                            <color key="titleColor" red="0.1546137521" green="0.17923045060000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onButton4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdf-8D-mhp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="z10-js-B8k"/>
                                 </constraints>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your name to continue..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T41-nn-KxZ">
+                                <rect key="frame" x="20" y="256" width="374" height="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uEp-hL-TUd">
+                                <rect key="frame" x="20" y="310" width="374" height="92"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lmZ-1U-4Hu">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="IwW-Zs-Tij"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                            <segment title="Third"/>
+                                            <segment title="Fourth"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onSegmentControlChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="NoH-L2-ibk"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lhW-vw-MzE">
+                                        <rect key="frame" x="-2" y="31" width="378" height="31"/>
+                                        <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DRN-4M-UgS">
+                                        <rect key="frame" x="0.0" y="61" width="376" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.9640265830257122" green="1" blue="0.56936281395136956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.86514211108699557" green="1" blue="0.97153256870848126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gti-3h-9cy" secondAttribute="trailing" constant="20" id="3ab-y7-yqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gti-3h-9cy" secondAttribute="bottom" constant="20" id="8mB-9I-f8C"/>
+                            <constraint firstItem="T41-nn-KxZ" firstAttribute="top" secondItem="yBY-P3-sjV" secondAttribute="bottom" constant="20" id="DdY-oe-aYG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T41-nn-KxZ" secondAttribute="trailing" constant="20" id="Pv3-SB-5SV"/>
+                            <constraint firstItem="uEp-hL-TUd" firstAttribute="top" secondItem="T41-nn-KxZ" secondAttribute="bottom" constant="20" id="ZuH-as-Kmd"/>
+                            <constraint firstAttribute="trailing" secondItem="uEp-hL-TUd" secondAttribute="trailing" constant="20" id="cN3-wo-1KP"/>
+                            <constraint firstItem="T41-nn-KxZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cl2-Ze-Fds"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yBY-P3-sjV" secondAttribute="trailing" constant="20" id="ewW-QT-Q0u"/>
                             <constraint firstItem="Gti-3h-9cy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g8O-fy-g1c"/>
                             <constraint firstItem="yBY-P3-sjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gPh-Gc-bJ8"/>
                             <constraint firstItem="yBY-P3-sjV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ntH-Fc-dZb"/>
+                            <constraint firstItem="uEp-hL-TUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wtF-zc-2P9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="41N-aN-sAJ" id="px6-hE-8rJ"/>
+                        <outlet property="button2" destination="zP1-w8-EOa" id="UIa-1j-Upa"/>
+                        <outlet property="button3" destination="wp1-tV-31W" id="BUz-z5-VsK"/>
+                        <outlet property="button4" destination="Zv8-1F-wgK" id="swY-ew-mqj"/>
+                        <outlet property="labelDemo" destination="r9J-qJ-Hxu" id="VW2-hT-27v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,6 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="256" height="256"/>
+        <image name="Image" width="64" height="64"/>
     </resources>
 </document>
