@@ -14,6 +14,7 @@ class Subject: CustomStringConvertible {
     var name: String?
     var teachers: [Teacher] = []
     var students: [Student] = []
+    var logo: String?
     
     var numTeachers: Int {
         return teachers.count
@@ -27,12 +28,13 @@ class Subject: CustomStringConvertible {
         return "Subject data \(String(describing: name))"
     }
 
-    convenience init(name: String, teachers: [Teacher] = [], students: [Student] = []) {
+    convenience init(name: String, teachers: [Teacher] = [], students: [Student] = [], logo: String? = nil) {
         self.init()
         
         self.name = name
         self.teachers = teachers
         self.students = students
+        self.logo = logo
     }
 }
 

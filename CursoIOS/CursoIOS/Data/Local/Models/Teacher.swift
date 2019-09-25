@@ -44,17 +44,19 @@ class Teacher: Hashable, CustomStringConvertible {
     var name: String?
     var email: String?
     var type: TeacherType?
+    var avatar: String?
     
     var description: String {
         return "Teacher data \(String(describing: name)) \(String(describing: email))"
     }
 
-    convenience init(name: String, email: String? = nil, type: TeacherType? = nil) {
+    convenience init(name: String, email: String? = nil, type: TeacherType? = nil, avatar: String? = nil) {
         self.init()
         
         self.name = name
         self.email = email
         self.type = type
+        self.avatar = avatar
     }
 }
 

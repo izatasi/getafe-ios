@@ -11,59 +11,45 @@ import Foundation
 
 let defaultStudents = [Student(name: "Óliver",
                                
-                               email: "oliver@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 2019,
-                                                                                     
-                                                                                     month: 5))),
+                               email: "oliver@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 2019,
+                                                                                                                
+                                                                                                                month: 5)), avatar: "img_student_1"),
                        
                        Student(name: "Sara",
                                
-                               email: "sara@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 1984,
-                                                                                     
-                                                                                     month: 9))),
+                               email: "sara@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1984,
+                                                                                                              
+                                                                                                              month: 9)), avatar: "img_student_2"),
                        
                        Student(name: "David",
                                
-                               email: "david@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 1985,
-                                                                                     
-                                                                                     month: 4))),
+                               email: "david@gmail.com",birthdate: Calendar.current.date(from: DateComponents(year: 1985,
+                                                                                                              
+                                                                                                              month: 4)), avatar: "img_student_3"),
                        
                        Student(name: "Ángel",
                                
-                               email: "angel@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 2013,
-                                                                                     
-                                                                                     month: 9))),
+                               email: "angel@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 2013,
+                                                                                                               
+                                                                                                               month: 9)), avatar: "img_student_4"),
                        
                        Student(name: "María",
                                
-                               email: "maria@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 1956,
-                                                                                     
-                                                                                     month: 4))),
+                               email: "maria@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1956,
+                                                                                                               
+                                                                                                               month: 4)), avatar: "img_student_5"),
                        
                        Student(name: "Eduardo",
                                
-                               email: "eduardo@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 1956,
-                                                                                     
-                                                                                     month: 12))),
+                               email: "eduardo@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1956,
+                                                                                                                 
+                                                                                                                 month: 12)), avatar: "img_student_1"),
                        
                        Student(name: "Miguel",
                                
-                               email: "miguel@gmail.com",
-                               
-                               birthdate: Calendar.current.date(from: DateComponents(year: 1983,
-                                                                                     
-                                                                                     month: 6)))]
+                               email: "miguel@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1983,
+                                                                                                                
+                                                                                                                month: 6)), avatar: "img_student_7")]
 
 
 
