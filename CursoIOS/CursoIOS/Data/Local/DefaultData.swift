@@ -13,13 +13,13 @@ let defaultStudents = [Student(name: "Óliver",
                                
                                email: "oliver@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 2019,
                                                                                                                 
-                                                                                                                month: 5)), avatar: "img_student_1"),
+                                                                                                                month: 5)), avatar: "img_student_2"),
                        
                        Student(name: "Sara",
                                
                                email: "sara@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1984,
                                                                                                               
-                                                                                                              month: 9)), avatar: "img_student_2"),
+                                                                                                              month: 9)), avatar: "img_student_1"),
                        
                        Student(name: "David",
                                
@@ -27,9 +27,9 @@ let defaultStudents = [Student(name: "Óliver",
                                                                                                               
                                                                                                               month: 4)), avatar: "img_student_3"),
                        
-                       Student(name: "Ángel",
+                       Student(name: "Ángela",
                                
-                               email: "angel@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 2013,
+                               email: "angela@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 2013,
                                                                                                                
                                                                                                                month: 9)), avatar: "img_student_4"),
                        
@@ -43,7 +43,7 @@ let defaultStudents = [Student(name: "Óliver",
                                
                                email: "eduardo@gmail.com", birthdate: Calendar.current.date(from: DateComponents(year: 1956,
                                                                                                                  
-                                                                                                                 month: 12)), avatar: "img_student_1"),
+                                                                                                                 month: 12)), avatar: "img_student_6"),
                        
                        Student(name: "Miguel",
                                
@@ -57,31 +57,36 @@ let defaultTeachers = [Teacher(name: "Juan",
                                
                                email: "juan@gmail.com",
                                
-                               type: .intern),
+                               type: .intern,
+                               avatar: "img_teacher_2"),
                        
                        Teacher(name: "Lucía",
                                
                                email: "lucia@gmail.com",
                                
-                               type: .extern),
+                               type: .extern,
+                               avatar: "img_teacher_1"),
                        
-                       Teacher(name: "Paula",
+                       Teacher(name: "Paulo",
                                
-                               email: "paula@gmail.com",
+                               email: "paulo@gmail.com",
                                
-                               type: .extern),
+                               type: .extern,
+                               avatar: "img_teacher_3"),
                        
                        Teacher(name: "Javier",
                                
                                email: "javier@gmail.com",
                                
-                               type: .intern),
+                               type: .intern,
+                               avatar: "img_teacher_4"),
                        
-                       Teacher(name: "Marta",
+                       Teacher(name: "Marlon",
                                
-                               email: "marta@gmail.com",
+                               email: "marlon@gmail.com",
                                
-                               type: .intern)]
+                               type: .intern,
+                               avatar: "img_teacher_5")]
 
 
 
@@ -89,30 +94,35 @@ let defaultSubjects = [Subject(name: "Android",
                                
                                teachers: defaultTeachers.filter{$0.name?.contains("u") ?? false},
                                
-                               students: defaultStudents.filter{$0.name?.contains("a") ?? false}),
+                               students: defaultStudents.filter{$0.name?.contains("a") ?? false},
+                               logo: "img_subject_android"),
                        
                        Subject(name: "iOS",
                                
                                teachers: defaultTeachers.filter{$0.name?.contains("o") ?? false},
                                
-                               students: defaultStudents.filter{$0.name?.contains("e") ?? false}),
+                               students: defaultStudents.filter{$0.name?.contains("e") ?? false},
+                               logo: "img_subject_ios"),
                        
                        Subject(name: "JavaScript",
                                
                                teachers: defaultTeachers.filter{$0.name?.contains("i") ?? false},
                                
-                               students: defaultStudents.filter{$0.name?.contains("i") ?? false}),
+                               students: defaultStudents.filter{$0.name?.contains("i") ?? false},
+                               logo: "img_subject_javascript"),
                        
                        Subject(name: "Python",
                                
                                teachers: defaultTeachers.filter{$0.name?.contains("e") ?? false},
                                
-                               students: defaultStudents.filter{$0.name?.contains("o") ?? false}),
+                               students: defaultStudents.filter{$0.name?.contains("o") ?? false},
+                               logo: "img_subject_python"),
                        
                        Subject(name: "Polymer",
                                
                                teachers: defaultTeachers.filter{$0.name?.contains("a") ?? false},
                                
-                               students: defaultStudents.filter{$0.name?.contains("u") ?? false})]
+                               students: defaultStudents.filter{$0.name?.contains("u") ?? false},
+                               logo: "img_subject_dart")]
 
 
