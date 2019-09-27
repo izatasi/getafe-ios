@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9190959233E5D7900F78FB3 /* UIView + Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9190958233E5D7900F78FB3 /* UIView + Utilities.swift */; };
 		D9384AE7233D12BA003E6FC2 /* TeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9384AE6233D12BA003E6FC2 /* TeachersViewController.swift */; };
 		D9384AE9233D13B3003E6FC2 /* TeacherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9384AE8233D13B3003E6FC2 /* TeacherViewCell.swift */; };
 		D9384AEB233D2E05003E6FC2 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9384AEA233D2E05003E6FC2 /* SubjectsViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9190958233E5D7900F78FB3 /* UIView + Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Utilities.swift"; sourceTree = "<group>"; };
 		D9384AE6233D12BA003E6FC2 /* TeachersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersViewController.swift; sourceTree = "<group>"; };
 		D9384AE8233D13B3003E6FC2 /* TeacherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewCell.swift; sourceTree = "<group>"; };
 		D9384AEA233D2E05003E6FC2 /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				D997900C2333FF7D00113437 /* AppDelegate.swift */,
 				D99790182333FF8A00113437 /* Info.plist */,
+				D9190958233E5D7900F78FB3 /* UIView + Utilities.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				D9A49DA42335471B0028C2C1 /* Teacher.swift in Sources */,
 				D9A49DA623354AB70028C2C1 /* Subject.swift in Sources */,
 				D9384AE9233D13B3003E6FC2 /* TeacherViewCell.swift in Sources */,
+				D9190959233E5D7900F78FB3 /* UIView + Utilities.swift in Sources */,
 				D997900F2333FF7D00113437 /* ViewController.swift in Sources */,
 				D99353B4233A95C200DBD7E6 /* MainViewController.swift in Sources */,
 				D9384AEB233D2E05003E6FC2 /* SubjectsViewController.swift in Sources */,

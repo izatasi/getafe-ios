@@ -21,7 +21,7 @@ class SubjectsViewContoller: UIViewController {
     }
 }
     
-extension SubjectsViewContoller: UICollectionViewDataSource, UICollectionViewDelegate {
+extension SubjectsViewContoller: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     //Configure
     func configureCollectionView() {
@@ -46,4 +46,16 @@ extension SubjectsViewContoller: UICollectionViewDataSource, UICollectionViewDel
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 16.0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = (collectionView.frame.size.width - 16.0) / 2
+        return CGSize(width: size, height: size)
+    }
 }

@@ -22,12 +22,20 @@ class SubjectViewCell: UICollectionViewCell {
         //subjectTeachers.
         //teacherEmail.text = nil
     }
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        subjectCellView.layer.cornerRadius = 8.0
+        subjectCellView.configureShadows()
+    }
+    
+
     
     func configureCell(subject: Subject) {
         subjectImage.image = UIImage(named: subject.logo ?? "")
         subjectName.text = subject.name
-        subjectNumStudents.text = subject.students.count()
-        //teacherEmail.text = teacher.email
+        subjectNumStudents.text = "Students (" + String(subject.students.count) + ")"
+        subjectNumTeachers.text = "Teachers (" + String(subject.teachers.count) + ")"
     }
 
 }

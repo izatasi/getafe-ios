@@ -21,6 +21,13 @@ class StudentViewCell: UITableViewCell {
         studentLabel2.text = nil
     }
     
+    //Para configurar la vista inicialmente, solo se llama cuando se carga la primera vez
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        studentCellView.layer.cornerRadius = 8.0
+        studentCellView.configureShadows()
+    }
+    
     func configureCell(student: Student) {
         studentImage.image = UIImage(named: student.avatar ?? "")
         studentLabel1.text = student.name

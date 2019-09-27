@@ -20,7 +20,14 @@ class TeacherViewCell: UITableViewCell {
         teacherName.text = nil
         teacherEmail.text = nil
     }
+  
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        teacherCellView.layer.cornerRadius = 8.0
+        teacherCellView.configureShadows()
+    }
     
+
     func configureCell(teacher: Teacher) {
         teacherImage.image = UIImage(named: teacher.avatar ?? "")
         teacherName.text = teacher.name
