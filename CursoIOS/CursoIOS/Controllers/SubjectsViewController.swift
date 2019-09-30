@@ -35,7 +35,7 @@ extension SubjectsViewContoller: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubjectViewCell", for: indexPath) as? SubjectViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailViewCell.cellI, for: indexPath) as? SubjectViewCell else {
             return UICollectionViewCell()
         }
         
