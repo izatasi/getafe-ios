@@ -9,7 +9,7 @@
 import UIKit
 
 
-class StudentViewCell: UITableViewCell {
+class PersonViewCell: UITableViewCell {
     
     @IBOutlet weak var mView: UIView!
     @IBOutlet weak var mImage: UIImageView!
@@ -30,9 +30,9 @@ class StudentViewCell: UITableViewCell {
         mView.configureShadows()
     }
     
-    func configureCell(student: Student) {
-        mImage.image = UIImage(named: student.avatar ?? "")
-        mLabelName.text = student.name
-        mLabelEmail.text = student.email
+    func configureCell(image: String?, name: String?, email: String?) {
+        mImage.image = UIImage(named: image ?? "")
+        mLabelName.text = name
+        mLabelEmail.text = email
     }
 }

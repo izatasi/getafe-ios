@@ -56,14 +56,14 @@ extension StudentsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StudentViewCell",
-                                                       for: indexPath) as? StudentViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PersonViewCell",
+                                                       for: indexPath) as? PersonViewCell else {
             return UITableViewCell()
         }
         
         if (indexPath.row < defaultStudents.count) {
             let student = defaultStudents[indexPath.row]
-            cell.configureCell(student: student)
+            cell.configureCell(image: student.avatar, name: student.name, email: student.email)
         }
         
         return cell
