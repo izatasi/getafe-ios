@@ -12,7 +12,7 @@ import Foundation
 
 // With Calendar and DateComponents class can create a new Date
 // Calendar.current return actual Calendar 'Gregorian'
-let defaultStudents = [Student(name: "Óliver",
+var defaultStudents = [Student(name: "Óliver",
                                email: "oliver@gmail.com",
                                birthdate: Calendar.current.date(from: DateComponents(year: 2019,
                                                                                      month: 5)),
@@ -50,7 +50,7 @@ let defaultStudents = [Student(name: "Óliver",
 // MARK: -  Create list of Teachers
 
 // With .extern or .intern we represent the Enum value for this properties.
-let defaultTeachers = [Teacher(name: "Juan",
+var defaultTeachers = [Teacher(name: "Juan",
                                email: "juan@gmail.com",
                                type: .intern,
                                avatar:"img_teacher_3"),
@@ -73,7 +73,7 @@ let defaultTeachers = [Teacher(name: "Juan",
 
 // MARK: - Create list of Subjects
 // Use a list.filter for get different values for each subject
-let defaultSubjects = [Subject(name: "Android",
+var defaultSubjects = [Subject(name: "Android",
                                teachers: defaultTeachers.filter{$0.name?.contains("u") ?? false},
                                students: defaultStudents.filter{$0.name?.contains("a") ?? false},
                                logo:"img_subject_android"),

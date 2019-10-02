@@ -153,10 +153,7 @@
 			children = (
 				0F504E372333FF79007EAFC0 /* MainViewController.swift */,
 				5ADFE5AE233BB11900D6801F /* StudentsViewController.swift */,
-				5ADFE5B0233BD78B00D6801F /* StudentViewCell.swift */,
 				0F1139EC233D1696006CB4CD /* TeachersViewController.swift */,
-				0F1139EE233D16F0006CB4CD /* TeacherViewCell.swift */,
-				0F1139F4233D3B75006CB4CD /* DetailViewCell.swift */,
 				0F1139F6233D3BDE006CB4CD /* SubjectsViewController.swift */,
 				0F586CAD233E844C00EB803E /* SubjectDetailViewController.swift */,
 				D9C95DA723427CE500F1CEF4 /* StudentDetailViewController.swift */,
@@ -199,6 +196,9 @@
 		D981B5562343CE1A00DC681C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0F1139EE233D16F0006CB4CD /* TeacherViewCell.swift */,
+				5ADFE5B0233BD78B00D6801F /* StudentViewCell.swift */,
+				0F1139F4233D3B75006CB4CD /* DetailViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

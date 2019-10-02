@@ -19,8 +19,26 @@ class SubjectDetailViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     
     @IBAction func Close(_ sender: UIButton) {
+        let alert = UIAlertController(title: "¿Delete the Subject?",
+                                      message: "You will delete the Subject permanently.  Are you sure",
+                                      preferredStyle: .alert)
         
-        navigationController?.popViewController(animated: true)
+        alert.addAction(UIAlertAction(title: "Delete",
+                                      style: .destructive ,
+                                      handler: {[weak self] _ in
+                                        defaultSubjects.removeAll { $0.name == self?.subject?.name}
+        self?.navigationController?.popViewController(animated: true)
+
+        }))
+
+        alert.addAction(UIAlertAction(title: "Cancel",
+                                      style: .cancel))
+
+        present(alert, animated: true)
+        
+        //        Cuando era solo cerrar!!!
+        //        handler: {[weak self] _ in
+        //        self?.navigationController?.popViewController(animated: true)}))
     }
     
     var subject: Subject?

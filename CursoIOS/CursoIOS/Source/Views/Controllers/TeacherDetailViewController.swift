@@ -19,9 +19,28 @@ class TeacherDetailViewController: UIViewController {
     @IBOutlet weak var deleteButton: UIButton!
     
     @IBAction func close(_ sender: UIButton) {
-    navigationController?.popViewController(animated: true)
+         let alert = UIAlertController(title: "¿Delete the Teacher?",
+                                      message: "You will delete this Teacher permanently.  Are you sure",
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Delete",
+                                      style: .destructive ,
+                                      handler: {[weak self] _ in
+                                        defaultTeachers.removeAll { $0.name == self?.teacher?.name}
+        self?.navigationController?.popViewController(animated: true)
+
+        }))
+
+        alert.addAction(UIAlertAction(title: "Cancel",
+                                      style: .cancel))
+
+        present(alert, animated: true)
+        
+        //        Cuando era solo cerrar!!!
+        //        handler: {[weak self] _ in
+        //        self?.navigationController?.popViewController(animated: true)}))
     }
-    
+
     var teacher: Teacher?
     private var mySubjects: [Subject] = []
     //private var teachersSet: Set<[Teacher]> = []
